@@ -71,7 +71,7 @@ npm run dev
 
 ## API documentation (Swagger)
 - Local: `http://localhost:3000/api-docs`
-- Production: `https://mycontacts-diog.onrender.com/api-docs`
+- Production: ``
 
 Swagger server uses `PUBLIC_URL` when set, otherwise `http://localhost:<PORT>`.
 
@@ -145,14 +145,14 @@ npm test
 - Environment vars:
   - `SECRET` (required)
   - `MONGODB_URI` (or `MONGO_DB_URI`)
-  - `PUBLIC_URL=https://mycontacts-diog.onrender.com`
+  - `PUBLIC_URL=`
   - `PORT` is provided by Render automatically (do not set `EXPRESS_PORT`)
 
 ### Frontend (Static Site)
 - Root Directory: `frontend`
 - Build Command: `npm ci && npm run build`
 - Publish Directory: `dist`
-- Env var: `VITE_API_BASE_URL=https://mycontacts-diog.onrender.com`
+- Env var: ``
 - Rewrite rule (SPA): Source `/*` → Destination `/index.html`
 
 ---
